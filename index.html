@@ -1,84 +1,1346 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Blueprint: Quotes Rotator</title>
-		<meta name="description" content="Blueprint: Quotes Rotator" />
-		<meta name="keywords" content="quotes rotator, content rotator, jquery, javascript, fade in, fade out, css3, component, html, web development, blockquote" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<header class="clearfix">
-				<span>Blueprint</span>
-				<h1>Quotes Rotator</h1>
-				<nav>
-					<a href="http://tympanus.net/Blueprints/NestedAccordion" class="icon-arrow-left" data-info="previous Blueprint">Previous Blueprint</a>
-					<a href="http://tympanus.net/codrops/?p=14591" class="icon-drop" data-info="back to the Codrops article">back to the Codrops article</a>
-				</nav>
-			</header>	
-			<div class="main">
-				<div id="cbp-qtrotator" class="cbp-qtrotator">
-					<div class="cbp-qtcontent">
-						<img src="images/1.jpg" alt="img01" />
-						<blockquote>
-						  <p>People eat meat and think they will become as strong as an ox, forgetting that the ox eats grass.</p>
-						  <footer>Pino Caruso</footer>
-						</blockquote>
-					</div>
-					<div class="cbp-qtcontent">
-						<img src="images/2.jpg" alt="img02" />
-						<blockquote>
-						  <p>Nothing will benefit human health and increase the chances for survival of life on Earth as much as the evolution to a vegetarian diet.</p>
-						  <footer>Albert Einstein</footer>
-						</blockquote>
-					</div>
-					<div class="cbp-qtcontent">
-						<img src="images/3.jpg" alt="img03" />
-						<blockquote>
-						  <p>If you don't want to be beaten, imprisoned, mutilated, killed or tortured then you shouldn't condone such behaviour towards anyone, be they human or not.</p>
-						  <footer>Moby</footer>
-						</blockquote>
-					</div>
-					<div class="cbp-qtcontent">
-						<img src="images/4.jpg" alt="img04" />
-						<blockquote>
-						  <p>My body will not be a tomb for other creatures.</p>
-						  <footer>Leonardo Da Vinci</footer>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/jquery.cbpQTRotator.min.js"></script>
-		<script>
-			$( function() {
-				/*
-				- how to call the plugin:
-				$( selector ).cbpQTRotator( [options] );
-				- options:
-				{
-					// default transition speed (ms)
-					speed : 700,
-					// default transition easing
-					easing : 'ease',
-					// rotator interval (ms)
-					interval : 8000
-				}
-				- destroy:
-				$( selector ).cbpQTRotator( 'destroy' );
-				*/
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Blueprint: Quotes Rotator</title>
+  <meta name="description" content="Blueprint: Quotes Rotator" />
+  <meta name="keywords" content="quotes rotator, content rotator, jquery, javascript, fade in, fade out, css3, component, html, web development, blockquote" />
+  <meta name="author" content="Codrops" />
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/default.css" />
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+      <div id="cbp-qtrotator" class="cbp-qtrotator">
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>a</code> enter into insert mode after the character your cursor is on.</p>
+          </blockquote>
+        </div>
 
-				$( '#cbp-qtrotator' ).cbpQTRotator();
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>A</code> enter into insert mode at the end of the current line.</p>
+          </blockquote>
+        </div>
 
-			} );
-		</script>
-	</body>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>b</code> move cursor to first character of previous word.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>B</code> move cursor to first character of previous non-blank series of characters.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&lt;C-b&gt;</code> scroll page backwards (move up in the file).</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p>c stands for “change” will not do anything on its own, but acts as a modifier to other commands. Here are some common commands handy for editing front end code.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>cw</code> cw stands for change word. This will delete the word your cursor is over and enter into insert mode.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>ci(</code> Change all text in between a set of parenthesis.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>ci"</code> If your cursor is in between a set of quotes, this will delete everything inside those quotes and drop you into insert mode.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>ct"</code> Change text til the quotes.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>2ct"</code> Change text from cursor up til the 2nd quote in a line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>cF"</code> Change from cursor backwards finding and including the previous quote.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>C</code> Delete until the end of the line and enter into insert mode.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:cd ../</code> Change directories to one previous.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:cd ~/Sites/projectname</code> Change directories to a known directory.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p>CTRL-c In Normal mode, any pending command is aborted. Also aborts current search.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>dd</code> Delete the current line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>D</code> Delete from cursor until the end of the line. Same as <code>d$</code>.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>dw</code> Delete the word your cursor is on. Difference between this and cw is that you do not enter into insert mode.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>2dw</code> This will delete the word your cursor is on as well as the next one. You can replace 2 with any number.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>d^</code> Delete from cursor to beginning of the line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>d/pattern</code> Deletes up to first matched pattern.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>2df"</code> Delete from cursor to find the 2nd quote mark. This is inclusive so it will delete the second quote. This is a handy command for deleting attributes in html if your cursor is on the first letter of the attribute.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>di"</code> Delete everything inside of these quotes.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>da"</code> Delete everything with quotes wrapped around (including the quotes).</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&lt;C-d&gt;</code> Scroll half page (in this case “d” is a mnemonic for “down”).</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:%d</code> Deletes all lines in a file.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:2,8d</code> Deletes lines two through eight.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>e</code> jumps to the end of the next word.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>E</code> jumps to the end of the next non-blank series of characters.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>ge</code> jumps to the end of the previous word.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:ea 5m</code> jump to five minutes ago. Seriously.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:ea 1h</code> jump to 1 hour ago.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:ea 14h 30m</code> jump to 14 hours and 30 minutes ago. Ok you get the point.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:e filename</code> open file in the current window.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:e .</code> open file explorer in current directory.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p>f is for finding things so it doesn’t do anything on it’s own. It will jump to the next character you type after f. It can be combined with c,d,y to change, cut, and copy sections of text.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>fr</code> jumps to the next r on the (same line only).</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>ft</code> jumps to the next t on the (same line only).</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>f,</code> jumps to the next , on the (same line only).</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>Fr</code> jumps to the previous r (same line only).</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>Ft</code> jumps to the previous t (same line only).</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>F,</code> jumps to the previous , (same line only).</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>2df"</code> delete from cursor through two occurences of “.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&lt;C-f&gt;</code> scrolls one full page forward.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>gx</code> Go to url under your cursor in a browser.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>gf</code> Go open file under your cursor in the current window.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>g;</code> Go to the last place you edited text.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>g,</code> Go forward in the change list.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>4g,</code> Go forward 4 spots on the change list.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>gg=G</code> or <code>1G=G</code> format the entire file.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>gn</code> Grab the next match from last search and visually select it.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>gi</code> Go into insert mode at the end of the last insert you did.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>ge</code> Go to the end of the previous word.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>gp</code> Pastes just like p but leave the cursor after the pasted text.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>gP</code> Pastes just like P but leave the cursor after the pasted text.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>gv</code> Reselects most recent visual selection.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>gv$A</code> Reselects most recent visual selection then moves to the end of the line, and enters insert mode.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>g~~</code> Switch case of all characters in current line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>gq</code> Format selected text.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:%g/pattern/norm @q</code> Run macro q on all lines in a file that match a pattern.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:%g/^\d/norm yyGp</code> This searches for all lines of a file that start with a digit as the first character. It then copies the line and pastes it at the bottom of the file.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:%g/^$/norm dd</code> Delete all blank lines in a file.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:%g/^\$/norm "Ayy</code> Yank (copy) all lines that start with a dollar sign and append them to register A.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>h</code> Move cursor one character to the left.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>4h</code> Move cursor four characters to the left.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>dh</code> Delete character to the left of cursor.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:h</code> Opens up vim help in a new window.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:h a</code> Opens vim help to documentation on the a key.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:h i_CTRL-R</code> Opens vim help to documentation on pressing control and r while in insert mode.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>H</code> Move cursor to first (highest) line in window.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>i</code> Enter insert mode where your cursor is. Any text you insert will be inserted before the character your cursor was over.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>4i&lt;tab&gt;&lt;escape&gt;</code> Insert 4 tabs (leaves you in command mode, not insert mode).</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>80i*&lt;escape&gt;</code> Insert 80 * characters.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>I</code> Insert text at the very beginning of the line.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>j</code> Moves cursor down one line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>32j</code>  Moves the cursor down 32 lines.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>J</code> Joins two lines removing indent.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>k</code> moves cursor up one line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>8k</code> moves cursor up 8 lines.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&lt;C-w&gt;K</code> rotates window to horizontal split.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>dk</code> delete current line and line above cursor.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>l</code> Move cursor right one character.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>dl</code> Delete character under cursor. Same as x.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>L</code> Move cursor to last line in window.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p>m is for marking spots (which you can think of as bookmarks in your files). It does not do anything by itself.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>mk</code> mark spot as k.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>'k</code> return the cursor to the spot you marked as “k”.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>d'k</code> delete from the cursor’s position to the spot you marked as “k”.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>c'k</code> change from the cursor’s position to the spot you marked as “k”.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>y'k</code> yank/copy from the cursor’s position to the spot you marked as “k”.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>M</code> Move cursor to middle of window.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>n</code> moves forward to next match of a search pattern.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>N</code> moves backwards to previous match of a search pattern.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>gn</code> search forward for the last used search pattern.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>o</code> Opens a new line below where your cursor is and places you in insert mode.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>O</code> Opens a new line above where your cursor is and places you in insert mode.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>CTRL-o</code> Go backwards in the jumplist (list of where your cursor has been). Trust me this is like movement steroids.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>12CTRL-o</code> You can also pass it a count so this will go backwards in the jumplist 12 spots.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:only</code> Closes all splits except for the current one.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p>Paste is a pretty big deal when you are dealing with code. So p should be one of your best friends.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>p</code> pastes in the last thing you yanked or deleted (copied or cut) after the cursor.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>P</code> pastes in the last thing you yanked or deleted (copied or cut) before the cursor.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>2p</code> pastes in the last thing you yanked or deleted (copied or cut) twice.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>xp</code> this will swap two characters. Technically it just deletes the character under your cursor, then pastes it back in. This is the equivalent of <code>dlp</code>.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>"*p</code> Pastes in text from your system clipboard.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>"2p</code> This will paste in text from the second register. You will use this all of the time. Most useful when you delete something you want to paste, then delete something else. Move to the place where you want to paste text, hit p and go “doh”. Just remember <code>"2p</code>.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>"%p</code> Pastes in the name of the current file.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:212pu</code> Pastes in last copy or delete on line 212. 212 can be any line number.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:42pu *</code> Pastes in system clipboard text at line 42.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>"/p</code> Pastes in your last search pattern.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:&lt;c-r&gt;/</code> Pastes in your last search pattern when you are on the command line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>"ap</code> Pastes in the contents of register a. To see a list of registers and what they have in them, do <code>:reg</code> or <code>:registers</code>.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>"= 8*8&lt;CR&gt;p</code> Pastes in evaluation of the expression <code>8*8</code>. This could be any maths you want. <code>=</code> is the expression register, which allows you to do calculations. From normal mode you can launch it by hitting <code>"=</code>.</p>
+            </blockquote>
+          </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p>q records things - so it doesn’t do much on its own. You need to tell it what register to store the recorded sequence in.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>qa</code> Begins recording into register a. Enter in keystrokes you want to save, then hit <code>q</code> to end the recording.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>@a</code> Will play back what you just recorded into register a.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:q</code> quits file only if you have no unsaved changes.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:q!</code> quits file without writing any of your changes.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:wq</code> saves and quits file.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:12,42wq</code> saves lines 12 to 42 and quits file.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:wqa</code> saves and quits all files in buffer.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>r</code> Replaces character under cursor with next input i.e.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>ra</code> Replaces the character under the cursor with a.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>R</code> Enter “replace mode” which is like insert mode except you will overwrite characters instead of insert between them.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:r filename</code> Read the contents of filename and place into the current buffer.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:r !ls</code> Pastes in the output of ls. ! calls an external process in vim. So this can be pretty userful.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:r !cd -; ls</code> Pastes in the directory listing of the last directory you were in.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:r !w3m -dump http://somewebsite.com</code> Pastes in the content from somewebsite.com without any of the markup. Must have w3m installed. WHICH YOU SHOULD :) If you have homebrew installed you can simply run <code>brew install w3m</code>.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:r !tree</code> Pastes in the output from running tree on a directory.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:reg</code> or <code>:registers</code> Print out a list of available registers and their contents. Registers are like a multi-shelf clipboard. But it also stores all of your recent deletes. In vim delete behaves more like cut than a true delete.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>s</code> deletes the character your cursor is on and enters into insert mode.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>S</code> deletes the whole line you are on and enters into insert mode.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:sp</code> This will split the current window horizontally. Sp is short for split.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:sp file.txt</code> This will split the current window horizontally with a file named file.txt.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:vsp file.txt</code> This will split the current window vertically. vsp stands for vertical split.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p>s is how you do find and replace, so let’s just say it is all of the important.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:s/foo/bar</code> replaces foo with bar on the current line for the first occurance of foo.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:12,42s/foo/bar</code> replaces foo with bar on lines 12,42 for the first occurance of foo in each line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:12,42s/foo/bar/g</code> replaces all occurances of foo with bar on lines 12,42.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:%s/foo/bar/g</code> replaces all occurances of foo with bar for the entire file.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:'&lt;,'&gt;s/foo/bar/g</code> replaces all occurances of foo with bar for the last visual selection.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:%~</code> Repeat last substitute with same substitute string but with last used search pattern across the entire file.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:%s/\ class=".*"//g"</code> Delete all classes in markup for the current file.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:%s/\ id=".*"//g"</code> Delete all ids in markup for the current file.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:bufdo %s/\ class=".*"//ge | update</code> Delete all classes in markup for all files in buffer.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:tabdo %s/\ class=".*"//ge | update</code> Delete all classes in markup for all files in the current tab.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:%s/\s\+$//e</code> Removes trailing whitespace.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>t</code> means ‘til’ so it doesn’t do anything on its own. It is very similar to f but f is inclusive. T is exclusive meaning it will stop before the character you are finding.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>tf</code> put cursor one character before the next occurance of f.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>;</code> repeat latest f, F, t, or T.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>,</code> repeat it in the opposite direction.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>dt&lt;</code> Delete up until the next <code>&lt;</code>. This is handy in the markup world.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>dt"</code> Delete from cursor until next “.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>dT}</code> Delete backwards from cursor until previous }.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>u</code> Undo changes.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>U</code> Undo all latest changes on one line, the line where the latest change was made.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&lt;C-r&gt;</code> Redo changes.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&lt;C-u&gt;</code> Scroll window upwards to the amount set by the “scroll” option. Default is half a screen.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:undol</code> List all the history points in your tree of changes.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>v</code> Start visual mode on a per character basis.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>V</code> Starts visual mode linewise (selects whole lines).</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>CTRL-v</code> Starts visual mode blockwise (very favorite).</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>gv</code> Reselect last visual selection.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>w</code> Moves to the next word.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>3w</code> Moves to the third word.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>x</code> delete character under your cursor.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>X</code> this will delete a character before the cursor. Same as <code>dh</code>.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p>y stands for copy, I mean yank. It doesn’t do anything by itself. It is very similar to c and d in how it can be used.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>yy</code> Copies current line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>"xyy</code> Copies current line into register x.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>"jY</code> Copies current line into register j. If you like “Y” to work from the cursor to the end of line (which is more logical, but not Vi-compatible) use “:map Y y$”.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:12,112y</code> Copies lines 12 through 112.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>mk { motion } y'k</code> Mark a spot k, navigate to a new spot and then copies from mark k to the current position of your cursor.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>yt"</code> Copies from current cursor postion to the next quote on the same line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>yt&gt;</code> Copies from current cursor postion to the next &gt; on the same line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>yT&gt;</code> Copies from current cursor postion to the previous &gt; on the same line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>yf&gt;</code> Copies from current cursor postion up to and including the next &gt; on the same line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>yF&gt;</code> Copies from current cursor postion up to and including the previous &gt; on the same line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&lt;C-y&gt;</code> Scroll up by 1 line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>12&lt;C-y&gt;</code> Scroll up 12 lines.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>z&lt;CR&gt;</code> Redraws the screen so that your cursor line is at the top of the window. Same as <code>zt</code>.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>z-</code> Redraws the screen so that your cursor line is at the bottom of the window. Same as <code>zb</code>.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>zz</code> Redraws the screen so that your cursor line is at the middle of the window.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>*</code> search forward for the word under cursor in current file. Super useful for finding common hex codes in css. And other things.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>#</code> search backward for the word under cursor in current file.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>/</code> Forward search for things.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>/&lt;p&gt;</code> Forward search for the next opening paragraph tag.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>/\</code> Forward search for the next space.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>/^}</code> Forward search for closing bracket of a css class, if the css class is closed at the beginning of a new line i.e.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>?</code> Backwards search.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>?http</code> Search backwards for the string <code>http</code>.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>==</code> Format current line of code.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&gt;&gt;</code> Indent current line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>.</code> Repeat last change.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>@:</code> Repeat last command line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:set paste</code> Set this if you are pasting in content from the system clipboard. Trust me.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:set paste!</code> Using ! at the end of any set reverses the current setting. This is useful so that you only have to remember one command and you never have to remember current state. For instance to be able to see line numbers you can do <code>:set nu</code> or <code>:set number</code>. To undo these commands, you would set <code>:set nonu</code> or <code>:set nonumber</code>. This seems like a lot to remember. An alternative is using ! like so <code>:set nu!</code> This will reverse whatever state set number currently resolves to. If line numbers are currently shown, they will be hidden. If they are hidden, they will become revealed. I use this pattern a lot when changing settings of file.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:12,54=</code> Format lines 12 through 54.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:56,99&gt;</code> Indent lines 56 through 99.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>:52,84y</code> Yank / copy lines 52 through 84.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>12&gt;&gt;</code> Indent 12 lines including the line you are on.</p>
+          </blockquote>
+        </div>
+
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p>Remember <code>&lt;C-</code> means the control key. So <code>&lt;C-b&gt;</code> would translate to pressing control and b at the same time.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&lt;C-b&gt;</code> Scroll backwards one full screen.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&lt;C-u&gt;</code> Scroll backwards or ‘up’ a half screen.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&lt;C-d&gt;</code> Scroll forwards or ‘down’ a half screen.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&lt;C-f&gt;</code> Scroll forwards.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&lt;C-y&gt;</code> Scroll backwards count lines (defaults to one).</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+          <blockquote>
+            <p><code>&lt;C-e&gt;</code> Scroll forwards one full line.</p>
+          </blockquote>
+        </div>
+
+        <div class="cbp-qtcontent">
+            <blockquote>
+              <p><code>&lt;C-y&gt;</code> Scroll backwards one full line.</p>
+            </blockquote>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.cbpQTRotator.min.js"></script>
+    <script>
+      $( function() {
+        /*
+           - how to call the plugin:
+           $( selector ).cbpQTRotator( [options] );
+           - options:
+           {
+          // default transition speed (ms)
+speed : 700,
+          // default transition easing
+easing : 'ease',
+          // rotator interval (ms)
+interval : 8000
+}
+- destroy:
+$( selector ).cbpQTRotator( 'destroy' );
+         */
+
+          $( '#cbp-qtrotator' ).cbpQTRotator();
+
+          } );
+    </script>
+  </body>
 </html>
