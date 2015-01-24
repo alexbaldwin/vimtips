@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Vim Tips - New Tab Replacement",
+  "short_name": "Vim Tips",
+  "description": "Practical Vim Tips shown on your new tab page.",
+  "version": "0.1",
+  "offline_enabled": true,
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

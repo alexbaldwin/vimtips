@@ -159,3 +159,6 @@
   };
 
 } )( jQuery, window );
+
+// Execute
+$('#cbp-qtrotator').cbpQTRotator();

@@ -38,3 +38,7 @@ blockquote p {
   text-align: center;
   font-style: normal;
 }
+
+blockquote code {
+  padding: 0 0.5rem;
+}
