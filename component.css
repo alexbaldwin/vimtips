@@ -1,0 +1,40 @@
+.clearfix:after {
+  clear: both;
+}
+
+body, html {
+  font-family: 'Avenir', 'Helvetica Neue', helvetica, sans-serif;
+  color: #333;
+  height: 100%;
+  width: 100%;;
+  overflow: hidden;
+}
+
+.cbp-qtrotator {
+  position: relative;
+}
+
+.cbp-qtrotator .cbp-qtcontent {
+  position: absolute;
+  opacity: 0;
+  max-width: 40rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
+.no-js .cbp-qtrotator .cbp-qtcontent {
+  position: relative;
+  z-index: 100;
+  opacity: 1;
+}
+
+.table {
+  height: 100%;
+  table-layout: fixed;
+}
+
+blockquote p {
+  text-align: center;
+  font-style: normal;
+}

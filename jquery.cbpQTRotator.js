@@ -80,7 +80,7 @@
         if( this.support ) {
           this._resetProgress();
         }
-        this._next();
+       // this._next();
         this._startRotator();
       }, this ), this.options.interval );
 

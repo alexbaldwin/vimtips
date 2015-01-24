@@ -4,18 +4,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Blueprint: Quotes Rotator</title>
-  <meta name="description" content="Blueprint: Quotes Rotator" />
-  <meta name="keywords" content="quotes rotator, content rotator, jquery, javascript, fade in, fade out, css3, component, html, web development, blockquote" />
-  <meta name="author" content="Codrops" />
+  <title>Vim Tips</title>
+  <meta name="description" content="Vim Tips by Adam Morse" />
+  <meta name="author" content="Alex Baldwin" />
   <link rel="shortcut icon" href="../favicon.ico">
-  <link rel="stylesheet" type="text/css" href="css/default.css" />
-  <link rel="stylesheet" type="text/css" href="css/component.css" />
-  <script src="js/modernizr.custom.js"></script>
+  <link rel="stylesheet" type="text/css" href="basscss.min.css" />
+  <link rel="stylesheet" type="text/css" href="component.css" />
+  <script src="modernizr.custom.js"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="main">
+  <div class="table">
+    <div class="table-cell">
       <div id="cbp-qtrotator" class="cbp-qtrotator">
         <div class="cbp-qtcontent">
           <blockquote>
@@ -1318,29 +1317,14 @@
         </div>
       </div>
     </div>
+    <small class="p2 fixed bottom-0 right-0 light-gray">Vim Tips by <a href=""
+        class="light-gray">Adam Morse</a></small>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.cbpQTRotator.js"></script>
+    <script src="jquery.cbpQTRotator.js"></script>
     <script>
       $( function() {
-        /*
-           - how to call the plugin:
-           $( selector ).cbpQTRotator( [options] );
-           - options:
-           {
-          // default transition speed (ms)
-speed : 700,
-          // default transition easing
-easing : 'ease',
-          // rotator interval (ms)
-interval : 8000
-}
-- destroy:
-$( selector ).cbpQTRotator( 'destroy' );
-         */
-
-          $( '#cbp-qtrotator' ).cbpQTRotator();
-
-          } );
+        $( '#cbp-qtrotator' ).cbpQTRotator();
+      } );
     </script>
   </body>
 </html>
