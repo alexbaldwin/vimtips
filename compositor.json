@@ -1,0 +1,87 @@
+{
+  "name": "alexbaldwin/vimtips",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.17"
+  },
+  "title": "Vim Tips",
+  "branch": "gh-pages",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "http://vimtips.alexbaldwin.com/chrome",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/alexbaldwin/vimtips",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "vimtips",
+      "subhead": "Vim tips in your Chrome new-tab.",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "vimtips: Vim tips in your Chrome new-tab.",
+          "url": "http://vimtips.alexbaldwin.com/chrome"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "alexbaldwin",
+          "repo": "vimtips"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p></p>\n<p>Vim tips!</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/alexbaldwin/vimtips",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/alexbaldwin",
+          "text": "alexbaldwin"
+        }
+      ]
+    }
+  ]
+}
