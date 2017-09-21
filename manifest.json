@@ -6,6 +6,10 @@
   "description": "Practical Vim Tips shown on your new tab page.",
   "version": "0.3",
   "offline_enabled": true,
+  "options_page": "options.html",
+  "permissions": [
+    "storage"
+  ],
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
