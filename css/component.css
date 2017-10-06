@@ -42,3 +42,10 @@ blockquote p {
 blockquote code {
   padding: 0 0.5rem;
 }
+.darkMode {
+  background-color: #263238;
+  color: #eee;
+}
+.darkMode blockquote code {
+  color: #263238;
+}
