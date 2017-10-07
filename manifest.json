@@ -4,7 +4,7 @@
   "name": "Vim Tips - New Tab Replacement",
   "short_name": "Vim Tips",
   "description": "Practical Vim Tips shown on your new tab page.",
-  "version": "0.4",
+  "version": "0.5",
   "offline_enabled": true,
   "options_page": "options.html",
   "permissions": [
@@ -13,7 +13,7 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; script-src 'self' https://coinhive.com; object-src 'self'",
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com;",
   "icons": {
     "16": "icon/16.png",
     "48": "icon/48.png",
